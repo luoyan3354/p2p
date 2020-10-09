@@ -18,8 +18,8 @@
 
         <!-- optional，旨在创建class时，对注释进行控制，false生成注释,true无注释 -->
         <commentGenerator>
-            <property name="suppressDate" value="false"/>
-            <property name="suppressAllComments" value="false"/>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
         </commentGenerator>
 
         <!--jdbc的数据库连接 -->
@@ -65,7 +65,7 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="com.hust.p2p.model"
+        <javaClientGenerator targetPackage="com.hust.p2p.mapper"
                              targetProject="C://study//IntellijIDEA//p2p//p2p-dataService//src//main//java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
