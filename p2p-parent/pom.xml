@@ -34,6 +34,11 @@
         <redis-version>1.8.4.RELEASE</redis-version>
         <jedis-version>2.9.0</jedis-version>
         <dubbo-version>2.6.2</dubbo-version>
+        <apache-commons-version>3.4</apache-commons-version>
+        <jackson-version>2.7.3</jackson-version>
+        <commons-io-version>2.5</commons-io-version>
+        <httpclient-version>4.5.2</httpclient-version>
+        <fastjson-version>1.2.36</fastjson-version>
     </properties>
 
     <dependencyManagement>
@@ -182,7 +187,48 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!-- 加载apache commons包start -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache-commons-version}</version>
+            </dependency>
+            <!-- 加载jackson包 -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson-version}</version>
+            </dependency>
+            <!-- 文件IO操作包start -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io-version}</version>
+            </dependency>
+            <!-- httpclient4.5操作包start -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient-version}</version>
+            </dependency>
+            <!-- 阿里巴巴json解析包start -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson-version}</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
 
