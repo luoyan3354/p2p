@@ -16,4 +16,10 @@ public interface LoanInfoMapper {
     int updateByPrimaryKeyWithBLOBs(LoanInfo record);
 
     int updateByPrimaryKey(LoanInfo record);
+
+    /**
+     * 历史平均年化收益率
+     * @return
+     */
+    Double selectHistoryAverageRate();
 }

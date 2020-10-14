@@ -10,4 +10,8 @@ http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="dataservice"/>
     <!-- 配置zookeeper注册中心 -->
     <dubbo:registry protocol="zookeeper" address="192.168.157.128:2181"/>
+
+    <!--历史年化利率的service实现类给它注册到注册中心-->
+    <dubbo:service interface="com.hust.p2p.service.loan.LoanInfoService" ref="loanInfoServiceImpl" version="1.0.0" timeout="15000"></dubbo:service>
+
 </beans>
